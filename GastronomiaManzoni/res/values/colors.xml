@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Giallino -->
+    <color name="background_tabs">#FFAA00</color>
+<!--     <color name="background">#FFC469</color> -->
+	<color name="background">#FFBE3B</color>
+    <color name="background_title">#FFAA00</color>
+    <color name="title">#5C3317</color>
+	<color name="description">#5C3317</color>
+    <color name="caption">#5C3317</color>
+    
+<!-- Marroncino/Arancione -->    
+<!--     <color name="background_tabs">#EE7621</color> -->
+<!--     <color name="background">#FFA54F</color> -->
+<!--     <color name="title">#5C3317</color> -->
+<!--     <color name="caption">#5C3317</color> -->
+
+<!-- Bordeaux-->    
+<!--     <color name="background_tabs">#E33421</color> -->
+<!--     <color name="background">#EB6F3C</color> -->
+<!--     <color name="title">#FFFFFF</color> -->
+<!--     <color name="caption">#FFFFFF</color> -->
+
+<!--     <color name="background_tabs">#EE7621</color> -->
+<!--     <color name="background">#F09C28</color> -->
+<!--     <color name="title">#5C3317</color> -->
+<!--     <color name="caption">#5C3317</color> -->
+</resources>

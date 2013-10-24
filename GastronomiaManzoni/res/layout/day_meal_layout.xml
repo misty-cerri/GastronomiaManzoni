@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" 
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/dayMealImage"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:contentDescription="@string/day_meal_image_content_description" 
+        android:padding="5dip">
+    </ImageView>
+
+    <!-- style="@style/dayMealTitleStyle" -->
+    <TextView
+        android:id="@+id/dayMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dayMealImage" 
+        android:textColor="@color/title"
+        android:textSize="20sp">
+    </TextView>
+
+    <!-- style="@style/dayMealCaptionStyle" -->
+    <TextView
+        android:id="@+id/dayMealCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dayMealTitle"
+        android:layout_below="@+id/dayMealTitle"
+        android:textColor="@color/caption"
+        android:textSize="15sp">
+    </TextView>
+
+</RelativeLayout>

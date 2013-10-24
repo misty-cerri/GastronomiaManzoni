@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+	</style>
+
+<!--     <style name="AppTheme" parent="android:Theme.Light" /> -->
+    
+    <!-- 
+    <style name="dayMealTitleStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+	<style name="dayMealCaptionStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">#6b71f1</item>
+    </style>
+     -->
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/background">
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ 	android:background="@color/background"
+    android:orientation="vertical" 
+    android:id="@+id/day_meal_detail_layout_out">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/day_meal_detail_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/day_meal_detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:textColor="@color/title"
+                android:textSize="22sp" 
+                android:background="@color/background"/>
+
+            <TextView
+                android:id="@+id/day_meal_detail_pic_ingredients"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dip"
+                android:textColor="@color/caption"
+                android:textSize="13sp"
+                android:background="@color/background_tabs" />
+
+            <TextView
+                android:id="@+id/day_meal_detail_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:textColor="@color/description"
+                android:textSize="18sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+	
+    
+</LinearLayout>
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toEndOf="@id/day_meal_detail_layout_out"
+                         android:layout_alignParentBottom="true"
+                         ads:adUnitId="@string/ad_unit_id"
+                         ads:adSize="SMART_BANNER"
+                         ads:testDevices="@string/test_devices"
+                         ads:loadAdOnCreate="true"/>
+
+
+</RelativeLayout>

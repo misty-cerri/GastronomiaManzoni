@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Gastronomia Manzoni</string>
+    <string name="title_activity_app">Gastronomia Manzoni</string>
+    <string name="day_meal_image_content_description">Piatto del giorno</string>
+	<string name="tab_day_meal_title">Piatti del giorno</string>
+	<string name="tab_shop_info_title">Il negozio</string>
+	<string name="tab_personal_area_title">Promozioni</string>
+	<string name="shop_info_title">Gastronomia Manzoni</string>
+	<string name="shop_info_address">Vieni a trovarci in Via Caronno Varesino 111 a Morazzone (VA)</string>
+	<string name="shop_info_phone">Tel/Fax: 0332 879026</string>
+	<string name="shop_info_email">Email: info@gastronomiamanzoni.it</string>
+	<string name="shop_info_legal_name">GASTRONOMIA MANZONI DI ALESSANDRO MANZONI E C. S.N.C.</string>
+	<string name="shop_info_navigate">Raggiungici!</string>
+	<string name="shop_info_contact_us">I nostri contatti:</string>
+	<string name="shop_info_watch_our_meals">Ecco alcune delle nostre creazioni&#8230;</string>
+	<string name="shop_info_zoomed_meal">Uno dei nostri piatti</string>
+	<string name="geo_position">45.76248592,8.83658051</string>
+	<string name="day_meal_vegetarian">Piatto vegetariano</string>
+	<string name="day_meal_vegan">Piatto vegano</string>
+	<string name="day_meal_gluten_free">Senza glutine</string>
+	
+	<!-- Application messages -->
+	<string name="waiting_connection">Connessione in corso&#8230;</string>
+	<string name="not_connected_message">Il dispositivo è offline. Le informazioni potrebbero non essere aggiornate</string>
+	<string name="error_no_day_meal_downloaded">La lista dei piatti del giorno è già aggiornata</string>
+	<string name="error_downloading_day_meals">Errore durante l\'aggiornamento dei piatti del giorno. Riprovare più tardi</string>
+	<string name="error_day_meal_time_out">Il tempo per la connessione è scaduto. Le informazioni potrebbero non essere aggiornate</string>
+	<string name="error_starting_navigation_intent">Errore! Impossibile eseguire il navigatore</string>
+	
+	<!-- AdMob unit id -->
+	<string name="ad_unit_id">ca-app-pub-5291539228820993/4957350866</string>
+	<string name="test_devices">TEST_EMULATOR, 341A21B7937134B2</string>
+	
+	<!-- Settings menu -->
+	<string name="menu_settings">Impostazioni</string>
+	<string name="menu_notify">Notifiche</string>
+</resources>

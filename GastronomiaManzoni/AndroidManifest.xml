@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cerri.foodshop"
+    android:versionCode="4"
+    android:versionName="1.0.1">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:allowBackup="false">
+        <activity android:name="com.cerri.foodshop.ui.activities.TabsFragmentActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.cerri.foodshop.ui.activities.DayMealDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+        <!-- AdMob Activity -->
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        <!-- The update service -->
+        <service android:name="com.cerri.foodshop.batch.services.DayMealUpdateService"></service>
+		
+		<!-- Broadcast receiver that starts the update triggering alarms 
+		when the system boots up -->
+		<receiver android:name="com.cerri.foodshop.batch.receivers.AlarmStarterReceiver" android:enabled="true">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+
+		<!-- Broadcast receiver that launches the update services.
+		It is triggered whenever the alarms are fired -->
+        <receiver android:name="com.cerri.foodshop.batch.receivers.AlarmReceiver"></receiver>
+        
+    </application>
+
+</manifest>
